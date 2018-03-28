@@ -1,6 +1,6 @@
 server:
-  port: 8888
-  
+  port: 8898
+  user: admin
 eureka:
   client:
     serviceUrl:
@@ -13,6 +13,6 @@ spring:
     config:
       server:
         git:
-          uri: file:./config
-          #uri: http://192.168.6.130/myconfig.git
+          #uri: file:./config
+          uri: http://192.168.6.130/myconfig.git
           #basedir: target/config
