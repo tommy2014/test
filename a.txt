@@ -1,6 +1,18 @@
-master
-abc
-ppp
-kkkm
-aaazzz
-eeeee2423423www
+server:
+  port: 8888
+  
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+spring:
+  application:
+    name: configserver
+  cloud:
+    config:
+      server:
+        git:
+          uri: file:./config
+          #uri: http://192.168.6.130/myconfig.git
+          #basedir: target/config
